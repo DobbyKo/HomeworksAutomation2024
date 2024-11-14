@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35506.116 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeworksAutomation2024", "HomeworksAutomation2024\HomeworksAutomation2024.csproj", "{186B6300-52E7-4A61-9D91-6EFC422D9B05}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatAFullName", "FormatAFullName\FormatAFullName.csproj", "{CC358E19-D060-48C4-9119-28F97E23B020}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework14_11", "Homework14_11", "{1E4FD1B4-1D43-4CE4-B6AE-8F1F11B7454F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertAndAddTwoNumbers", "ConvertAndAddTwoNumbers\ConvertAndAddTwoNumbers.csproj", "{AEF3D7D0-2317-4BCE-B441-5A5CC4263677}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractAndModifySubstring", "ExtractAndModifySubstring\ExtractAndModifySubstring.csproj", "{D65AC166-46F8-4BC8-9F4F-769D3F0A28A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateTheAreaOfACircle", "CalculateTheAreaOfACircle\CalculateTheAreaOfACircle.csproj", "{000475AF-954C-4C82-B445-FD6D2237A716}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidateAgeInput", "ValidateAgeInput\ValidateAgeInput.csproj", "{AD21DF37-0504-465C-B054-194BBBF2982F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +21,35 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{186B6300-52E7-4A61-9D91-6EFC422D9B05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{186B6300-52E7-4A61-9D91-6EFC422D9B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{186B6300-52E7-4A61-9D91-6EFC422D9B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{186B6300-52E7-4A61-9D91-6EFC422D9B05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC358E19-D060-48C4-9119-28F97E23B020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC358E19-D060-48C4-9119-28F97E23B020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC358E19-D060-48C4-9119-28F97E23B020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC358E19-D060-48C4-9119-28F97E23B020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEF3D7D0-2317-4BCE-B441-5A5CC4263677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF3D7D0-2317-4BCE-B441-5A5CC4263677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF3D7D0-2317-4BCE-B441-5A5CC4263677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEF3D7D0-2317-4BCE-B441-5A5CC4263677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D65AC166-46F8-4BC8-9F4F-769D3F0A28A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D65AC166-46F8-4BC8-9F4F-769D3F0A28A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D65AC166-46F8-4BC8-9F4F-769D3F0A28A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D65AC166-46F8-4BC8-9F4F-769D3F0A28A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{000475AF-954C-4C82-B445-FD6D2237A716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{000475AF-954C-4C82-B445-FD6D2237A716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{000475AF-954C-4C82-B445-FD6D2237A716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{000475AF-954C-4C82-B445-FD6D2237A716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD21DF37-0504-465C-B054-194BBBF2982F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD21DF37-0504-465C-B054-194BBBF2982F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD21DF37-0504-465C-B054-194BBBF2982F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD21DF37-0504-465C-B054-194BBBF2982F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CC358E19-D060-48C4-9119-28F97E23B020} = {1E4FD1B4-1D43-4CE4-B6AE-8F1F11B7454F}
+		{AEF3D7D0-2317-4BCE-B441-5A5CC4263677} = {1E4FD1B4-1D43-4CE4-B6AE-8F1F11B7454F}
+		{D65AC166-46F8-4BC8-9F4F-769D3F0A28A1} = {1E4FD1B4-1D43-4CE4-B6AE-8F1F11B7454F}
+		{000475AF-954C-4C82-B445-FD6D2237A716} = {1E4FD1B4-1D43-4CE4-B6AE-8F1F11B7454F}
+		{AD21DF37-0504-465C-B054-194BBBF2982F} = {1E4FD1B4-1D43-4CE4-B6AE-8F1F11B7454F}
 	EndGlobalSection
 EndGlobal
