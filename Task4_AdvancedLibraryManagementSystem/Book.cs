@@ -1,16 +1,19 @@
 ﻿
-
-
 namespace Task4_AdvancedLibraryManagementSystem
 {
     public class Book : LibraryItem
     {
         public string Author { get; set; }
 
+        public Book(string title, string author) : base(title)
+        {
+            Author = author;
+        }
+
         public override void Borrow(string borrower, DateTime dueDate)
         {
-            if(IsBorrowed)
-        {
+            if (IsBorrowed)
+            {
                 Console.WriteLine($"'{Title}' is already borrowed.");
                 return;
             }
@@ -21,7 +24,7 @@ namespace Task4_AdvancedLibraryManagementSystem
 
             Console.WriteLine($"Book '{Title}' by {Author} borrowed by {Borrower}, due on {DueDate.ToShortDateString()}.");
         }
-
+        
         public override void Return()
         {
             if (!IsBorrowed)
@@ -37,4 +40,5 @@ namespace Task4_AdvancedLibraryManagementSystem
             Console.WriteLine($"'{Title}' has been returned.");
         }
     }
+
 }

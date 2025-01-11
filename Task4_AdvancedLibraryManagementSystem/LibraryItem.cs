@@ -1,18 +1,25 @@
-﻿
-namespace Task4_AdvancedLibraryManagementSystem
+﻿namespace Task4_AdvancedLibraryManagementSystem
 {
     public abstract class LibraryItem : IBorrowable
     {
-        public string Title { get; set; }
-        public bool IsBorrowed { get; set; }
-        public string Borrower { get; set; }
-        public DateTime DueDate { get; set; }
+        protected LibraryItem(string title)
+        {
+            Title = title;
+            IsBorrowed = false;
+            Borrower = string.Empty;
+            DueDate = DateTime.MinValue;
+        }
+
+        public string Title { get; private set; }
+        public bool IsBorrowed { get; protected set; }
+        public string Borrower { get; protected set; }
+        public DateTime DueDate { get; protected set; }
 
         public void CheckStatus()
         {
             if (IsBorrowed)
             {
-                Console.WriteLine($"Title: {Title}, Borrowed by {Borrower}, Due on {DueDate}");
+                Console.WriteLine($"Title: {Title}, Borrowed by {Borrower}, Due on {DueDate.ToShortDateString()}");
             }
             else
             {
@@ -24,7 +31,7 @@ namespace Task4_AdvancedLibraryManagementSystem
         {
             if (IsBorrowed)
             {
-                DueDate.AddDays(days);
+                DueDate = DueDate.AddDays(days);
             }
             else
             {
