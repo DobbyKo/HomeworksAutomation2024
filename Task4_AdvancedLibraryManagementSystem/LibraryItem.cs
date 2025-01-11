@@ -7,7 +7,7 @@
             Title = title;
             IsBorrowed = false;
             Borrower = string.Empty;
-            DueDate = DateTime.MinValue;
+            DueDate = DateTime.MinValue; 
         }
 
         public string Title { get; private set; }
