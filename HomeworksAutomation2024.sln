@@ -105,6 +105,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4_AdvancedLibraryManage
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem", "LibraryManagementSystem\LibraryManagementSystem.csproj", "{683C87CC-2707-4836-A575-73060FAD78F7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework_L11", "Homework_L11", "{0020C587-B9C5-4959-830C-59656BA5B07C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1_BuildTheSystem", "Task1_BuildTheSystem\Task1_BuildTheSystem.csproj", "{BFE27470-E71F-4560-B221-90B12C96ECF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -283,6 +287,10 @@ Global
 		{683C87CC-2707-4836-A575-73060FAD78F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{683C87CC-2707-4836-A575-73060FAD78F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{683C87CC-2707-4836-A575-73060FAD78F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFE27470-E71F-4560-B221-90B12C96ECF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFE27470-E71F-4560-B221-90B12C96ECF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFE27470-E71F-4560-B221-90B12C96ECF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFE27470-E71F-4560-B221-90B12C96ECF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -331,5 +339,6 @@ Global
 		{C83690A8-F7F7-41B4-891B-5A2D84C4E75D} = {7FC5A217-765D-41C5-B0F7-DA6BDF230A37}
 		{3FCD8F79-32C3-4840-8BAD-FF5A59223C93} = {7FC5A217-765D-41C5-B0F7-DA6BDF230A37}
 		{683C87CC-2707-4836-A575-73060FAD78F7} = {1339F07B-470F-4FE9-9922-45B972686070}
+		{BFE27470-E71F-4560-B221-90B12C96ECF7} = {0020C587-B9C5-4959-830C-59656BA5B07C}
 	EndGlobalSection
 EndGlobal

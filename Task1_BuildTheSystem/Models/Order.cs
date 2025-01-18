@@ -1,4 +1,4 @@
-﻿namespace Task1_BuildTheSystem
+﻿namespace Task1_BuildTheSystem.Models
 {
     public class Order
     {

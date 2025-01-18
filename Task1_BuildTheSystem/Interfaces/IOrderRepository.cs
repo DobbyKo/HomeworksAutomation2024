@@ -1,5 +1,6 @@
-﻿
-namespace Task1_BuildTheSystem
+﻿using Task1_BuildTheSystem.Models;
+
+namespace Task1_BuildTheSystem.Interfaces
 {
     public interface IOrderRepository
     {
