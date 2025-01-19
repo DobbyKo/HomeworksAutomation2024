@@ -3,8 +3,6 @@ using System.Collections.Generic;
 
 namespace Exam16JAN
 {
-    using System;
-
     class Program
     {
         static void Main(string[] args)

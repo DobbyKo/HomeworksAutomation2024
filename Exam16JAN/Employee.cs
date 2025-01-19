@@ -12,7 +12,7 @@ namespace Exam16JAN
         {
             FullName = fullName;
             Country = country;
-            Salary = salary;
+            Salary = salary; 
         }
 
         public void AddDepartment(string department)

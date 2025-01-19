@@ -1,10 +1,8 @@
-﻿namespace Exam16JAN
-{
-    using RestSharp;
-    using Newtonsoft.Json;
-    using System;
-    using System.Collections.Generic;
+﻿using RestSharp;
+using Newtonsoft.Json;
 
+namespace Exam16JAN
+{
     public class CountryService
     {
         private const string ApiUrl = "https://restcountries.com/v3.1/all?fields=name";
