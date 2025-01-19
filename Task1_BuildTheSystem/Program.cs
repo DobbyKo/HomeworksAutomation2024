@@ -1,45 +1,65 @@
-﻿namespace Task1_BuildTheSystem
+﻿using Microsoft.Extensions.Logging;
+using Task1_BuildTheSystem.Interfaces;
+using Task1_BuildTheSystem.Repos;
+using Task1_BuildTheSystem.Services;
+
+namespace Task1_BuildTheSystem
 {
     public class Program
     {
         static void Main()
         {
-            var productRepository = new ProductRepository(new ApplicationDbContext());
-            var orderRepository = new OrderRepository(new ApplicationDbContext());
+            using var loggerFactory = LoggerFactory.Create(builder => builder.AddConsole());
+            ILogger<OrderService> logger = loggerFactory.CreateLogger<OrderService>();
 
-            var productService = new ProductService(productRepository);
-            var orderService = new OrderService(productRepository, orderRepository);
+            string connectionString = "...";
 
-            // Create a new product
-            var newProduct = new Product
+            IProductRepository productRepository = new ProductRepository(connectionString);
+            IOrderRepository orderRepository = new OrderRepository(connectionString);
+
+            ProductService productService = new ProductService(productRepository);  
+            OrderService orderService = new OrderService(productRepository, orderRepository, logger);
+
+            ProductOperations productOperations = new ProductOperations(productService);
+
+
+            while (true)
             {
-                Name = "Laptop",
-                Price = 1200.00m,
-                Stock = 10
-            };
+                Console.WriteLine("Choose an option:");
+                Console.WriteLine("1. Add Product");
+                Console.WriteLine("2. Update Product");
+                Console.WriteLine("3. Delete Product");
+                Console.WriteLine("4. List All Products");
+                Console.WriteLine("5. Exit");
 
-            productService.AddProduct(newProduct);
+                string choice = Console.ReadLine();
 
-            // Check stock and place an order
-            var order = new Order
-            {
-                ProductId = newProduct.ProductId,
-                Quantity = 2
-            };
+                switch (choice)
+                {
+                    case "1":
+                        productOperations.AddProduct();
+                        break;
 
-            if (orderService.PlaceOrder(order))
-            {
-                Console.WriteLine("Order placed successfully!");
-            }
-            else
-            {
-                Console.WriteLine("Failed to place order. Insufficient stock or invalid product.");
-            }
+                    case "2":
+                        productOperations.UpdateProduct();
+                        break;
 
-            var orders = orderService.GetOrders();
-            foreach (var o in orders)
-            {
-                Console.WriteLine($"Order ID: {o.OrderId}, Product ID: {o.ProductId}, Quantity: {o.Quantity}");
+                    case "3":
+                        productOperations.DeleteProduct();
+                        break;
+
+                    case "4":
+                        productOperations.ListAllProducts();
+                        break;
+
+                    case "5":
+                        Console.WriteLine("Exiting the program.");
+                        return;
+
+                    default:
+                        Console.WriteLine("Invalid choice. Please select a valid option.");
+                        break;
+                }
             }
         }
     }

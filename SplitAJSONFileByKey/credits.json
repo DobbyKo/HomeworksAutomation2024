@@ -1,0 +1,12 @@
+[
+  {
+    "TransactionId": 1,
+    "Type": "credit",
+    "Amount": 200.0
+  },
+  {
+    "TransactionId": 3,
+    "Type": "credit",
+    "Amount": 300.0
+  }
+]

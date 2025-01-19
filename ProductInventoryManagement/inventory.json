@@ -1,0 +1,37 @@
+[
+  {
+    "ProductId": 101,
+    "ProductName": "Laptop",
+    "Category": "Electronics",
+    "Price": 1200.50,
+    "Stock": 20,
+    "Sales": [
+      5,
+      8,
+      6
+    ]
+  },
+  {
+    "ProductId": 102,
+    "ProductName": "Office Chair",
+    "Category": "Furniture",
+    "Price": 250.75,
+    "Stock": 30,
+    "Sales": [
+      10,
+      12,
+      9
+    ]
+  },
+  {
+    "ProductId": 103,
+    "ProductName": "Mouse",
+    "Category": "Electronics",
+    "Price": 50.0,
+    "Stock": 200,
+    "Sales": [
+      1,
+      4
+    ]
+  }
+]
